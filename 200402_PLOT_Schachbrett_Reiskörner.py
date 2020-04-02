@@ -1,4 +1,10 @@
-"""Dieses Script berechnet die berühmte Reiskornlegende von Sissa ibn Dahir."""
+"""
+Reiskornlegende graphisch mit matplotlib.
+
+Dieses Script berechnet die berühmte Reiskornlegende von Sissa ibn Dahir
+und zeigt das Ergebnis anhand eines Graphen unter Nutzung der
+matplotlib.
+"""
 
 import matplotlib.pyplot as plt
 summe = 0
