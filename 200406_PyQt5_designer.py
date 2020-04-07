@@ -49,12 +49,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Window made with PyQt5 designer"))
         self.button1.setText(_translate("MainWindow", "Press me!"))
         self.label1.setText(_translate("MainWindow", "Hello, my name is Dirk"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionLoad.setText(_translate("MainWindow", "Load..."))
-        self.actionSave.setText(_translate("MainWindow", "Save"))
+        self.actionSave.setText(_translate("MainWindow", "Save..."))
         self.actionExit.setText(_translate("MainWindow", "Exit"))
 
     def button1_clicked(self):
