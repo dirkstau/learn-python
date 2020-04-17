@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as anim
 
-fig = plt.figure()
+fig = plt.figure()  
 
 d, n = 200, 80  # Pixeldichte & Anzahl der Iterationen
 r = 2.5  # Fluchtradius (muss größer als 2 sein)
@@ -27,9 +27,12 @@ for k in range(n):
     M = abs(Z) < r
     Z[M] = Z[M] ** 2 + C[M]
     T[M] = k + 1
-    im = plt.imshow(T, cmap=plt.cm.twilight_shifted,
+    
+        im = plt.imshow(T, cmap=plt.cm.twilight_shifted,
                     animated=True, interpolation='gaussian')
     ims.append([im])
+
+
 
 ani = anim.ArtistAnimation(fig, ims, interval=100, blit=True, repeat_delay=0)
 
